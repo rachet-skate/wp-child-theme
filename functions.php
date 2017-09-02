@@ -1,5 +1,9 @@
 <?php
+
+include_once get_template_directory() . '/theme-includes.php';
+
 add_action( 'wp_enqueue_scripts', 'sk8tech_theme_enqueue_styles' );
+
 function sk8tech_theme_enqueue_styles() {
 
     $parent_style = 'parentThemeDirectoryName';
@@ -11,4 +15,5 @@ function sk8tech_theme_enqueue_styles() {
         array( $parent_style )
     );
 }
+
 ?>
