@@ -16,3 +16,5 @@ This is a template theme we use at [SK8Tech](https://sk8.tech). This document li
 # screenshot.sketch
 
 This is a template. Open it, change the logo to client's logo.
+
+# Remove the remove-before-usage folder
