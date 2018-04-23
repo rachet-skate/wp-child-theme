@@ -16,4 +16,21 @@ function sk8tech_theme_enqueue_styles() {
     );
 }
 
+function wpb_custom_logo() {
+    echo '<style type="text/css">
+    #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+    background-image: url(' . get_bloginfo('stylesheet_directory') . '/images/login-logo.png) !important;
+    background-position: 0 0;
+    background-size: cover;
+    color:rgba(0, 0, 0, 0);
+    }
+    #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
+    background-position: 0 0;
+    }
+    </style>
+    ';
+}
+
+add_action('wp_before_admin_bar_render', 'wpb_custom_logo');
+
 ?>
